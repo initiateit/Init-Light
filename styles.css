@@ -175,7 +175,7 @@
   padding-right: 10px;
   margin-right: 2px;
   margin-left: 2px;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 .clock-widget .label {
@@ -403,28 +403,34 @@
 
 /*NOTIFICATIONS*/
 .notification-widget {
-  border: 1px solid #18181b;
   background-color: #e5e7eb;
-  margin-left: 2px;
-  border-radius: 6px;
+  margin-right:10px;
+  border-radius: 12px;
 }
 .notification-widget .icon {
-  font-family: "Segoe Fluent Icons";
-  font-size: 16px;
+  font-family: "JetBrainsMonoNL Nerd Font";
   padding-right: 8px;
   color: #e5e7eb;
+  font-weight: bold;
 }
 .notification-widget .icon.new-notification {
-  font-family: "Segoe Fluent Icons";
   font-weight: bold;
-  font-size: 16px;
   color: #18181b;
 }
 .notification-widget .label.new-notification {
-  color: #18181b;
-  font-family: "Segoe UI Semibold";
-  font-size: 16px;
-  font-weight: bold;
+  color: #f9f9f9;
+  font-weight: 900;
+  padding-right:2px;
+  min-width:24px;
+  max-width:24px;
+  max-height:24px;
+  border-radius:12px;
+  background:#18181b;
+
+}
+
+.notification-widget.notify {
+  font-family: "JetBrainsMonoNL Nerd Font";
 }
 
 .apps-widget {
@@ -443,3 +449,33 @@
   padding:0 3px; 
   font-size:16px;
 } 
+
+/* Stack Widget*/
+
+.komorebi-stack {
+    border-radius: 12px;
+    min-width:40px;
+    background-color: #e5e7eb71;
+    color: #18181b;
+    margin-right:10px;
+}
+.komorebi-stack .widget-container {
+    color: #18181b;
+    border-radius: 12px;
+}
+
+.komorebi-stack .window .icon{
+  margin-left:4px;
+  padding:0 10px;
+}
+.komorebi-stack .window {
+    background-color: transparent;
+    border: none;
+}
+.komorebi-stack .window.active {
+    background-color: #e5e7eb;
+    color: #18181b;
+    border-radius: 12px;
+    height: auto;
+    margin: 0;
+}

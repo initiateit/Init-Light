@@ -37,6 +37,7 @@ bars:
         - "komorebi_active_layout"
         - "komorebi_workspaces"
         - "notifications"
+        - "komorebi_stack"
         - "media"
 
       center:
@@ -46,6 +47,24 @@ bars:
         - "volume"
         - "clock"
 widgets:
+  komorebi_stack:
+    type: "komorebi.stack.StackWidget"
+    options:
+      label_offline: ""
+      label_window: ""
+      label_window_active: ""
+      label_no_window: ""
+      label_zero_index: false
+      show_icons: "always"
+      icon_size: 19
+      max_length: 10
+      max_length_active: 20
+      max_length_ellipsis: ".."
+      hide_if_offline: false
+      show_only_stack: false
+      animation: true
+      enable_scroll_switching : true
+
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
     options:
@@ -100,6 +119,7 @@ widgets:
     options:
       label: "{data}"
       app_list:
+        - {icon: "", launch: "taskmgr", name: "Task Manager"}
         - {icon: "󰍢", launch: "notification_center", name: "Notification Center"}
         - {icon: "", launch: "quick_settings"}
         - {icon: "", launch: "search"}
@@ -147,7 +167,7 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%A, %d %B %Y}"
+      label: "{%a %d,  %b %I:%M %p}"
       label_alt: "{%I:%M %p}"
       tooltip: false
       callbacks:
@@ -205,7 +225,8 @@ widgets:
   notifications:
     type: "yasb.notifications.NotificationsWidget"
     options:
-      label: "<span>\ue7e7</span> {count}"
+      class_name: "notify"
+      label: "<span></span> {count}"
       label_alt: "{count} notifications"
       hide_empty: true
       tooltip: false
