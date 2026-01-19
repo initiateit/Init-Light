@@ -39,7 +39,6 @@ bars:
         - "notifications"
         - "komorebi_stack"
         - "media"
-
       center:
         - "active_window"
       right:
