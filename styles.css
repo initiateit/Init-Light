@@ -14,8 +14,7 @@
   padding-left: 8px;
   border-radius: 12px;
   margin-left: 8px;
-  min-width:20px;
-  max-width:20px;
+  width: 20px;
 }
 
 .komorebi-layout-menu {
@@ -27,8 +26,8 @@
 }
 
 .komorebi-layout-menu:hover {
-  background-color: #e5e7eb;
-  color: #59595f;
+  background-color: #d1d5db;
+  color: #18181b;
 }
 
 .komorebi-layout-menu .menu-item {
@@ -86,8 +85,8 @@
   font-weight: bold;
   background-color: transparent;
   margin: 0 4px 2px 2px;
-  padding: 10px;
   border-radius: 12px;
+  padding: 10px;
   height: 20px;
   width: 14px;
 }
@@ -189,7 +188,7 @@
   background-color: #e5e7eb;
   color: #18181b;
 }
-.calendar .calendar-table, .calendar .calendar-table::item {
+.calendar .calendar-table, .calendar .calendar-table .item {
   background-color: #e5e7eb;
   color: #18181b;
   font-family: "Segoe UI Semibold";
@@ -200,7 +199,7 @@
   font-size: 16px;
 }
 
-.calendar .calendar-table::item:selected {
+.calendar .calendar-table .item.selected {
   color: #e5e7eb;
   background-color: #18181b;
   border-radius: 6px;
@@ -306,11 +305,13 @@
 }
 
 .media-menu .title {padding-top:20px;}
-.media-menu .artist {padding-bottom:10px;}
-
-
 .media-menu .artist {
   font-family: "Segoe UI Semibold";
+  font-size: 20px;
+  font-weight: bold;
+  color: #18181b;
+  margin-left: 12px;
+  padding-bottom: 10px;
   margin-top: 4px;
   margin-bottom: 4px;
 }
@@ -410,7 +411,7 @@
 .notification-widget .icon {
   font-family: "JetBrainsMonoNL Nerd Font";
   padding-right: 8px;
-  color: #e5e7eb;
+  color: #18181b;
   font-weight: bold;
 }
 .notification-widget .icon.new-notification {
@@ -421,12 +422,11 @@
   color: #f9f9f9;
   font-weight: 900;
   padding-right:2px;
-  min-width:24px;
-  max-width:24px;
-  max-height:24px;
-  border-radius:12px;
+  min-width:22px;
+  max-width:22px;
+  max-height:22px;
+  border-radius:10px;
   background:#18181b;
-
 }
 
 .notification-widget.notify {
