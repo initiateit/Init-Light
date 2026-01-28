@@ -13,7 +13,7 @@ bars:
     class_name: "yasb-bar"
     alignment:
       position: "top"
-      center: false
+      align: "center"
     blur_effect:
       enabled: false
       acrylic: false
@@ -31,7 +31,7 @@ bars:
       top: 10
       left: 0
       bottom: 1
-      right: 4
+      right: 10
     widgets:
       left:
         - "komorebi_active_layout"
@@ -80,18 +80,18 @@ widgets:
         - 'ultrawide_vertical_stack'
         - 'right_main_vertical_stack'
       layout_icons:
-        bsp: "\uebeb"
-        columns: "\uebf7"
-        rows: "\uec01"
-        grid: "\udb81\udf58"
-        scrolling: "\uebf7"
-        vertical_stack: "\uebee"
-        horizontal_stack: "\uebf0"
-        ultrawide_vertical_stack: "\uebee"
-        right_main_vertical_stack: "\uebf1"
-        monocle: "\uf06f"
-        maximized: "\uf06f"
-        floating: "\uf2d2"
+        bsp: ""
+        columns: ""
+        rows: ""
+        grid: ""
+        scrolling: ""
+        vertical_stack: ""
+        horizontal_stack: ""
+        ultrawide_vertical_stack: ""
+        right_main_vertical_stack: ""
+        monocle: ""
+        maximized: ""
+        floating: ""
         paused: "\udb83\udf89"
         tiling: "\udb81\ude40"
       callbacks:
@@ -118,20 +118,23 @@ widgets:
     options:
       label: "{data}"
       app_list:
-        - {icon: "", launch: "taskmgr", name: "Task Manager"}
-        - {icon: "󰍢", launch: "notification_center", name: "Notification Center"}
-        - {icon: "", launch: "quick_settings"}
-        - {icon: "", launch: "search"}
-        - {icon: "", launch: "control"}
-        - {icon: "", launch: "ncpa.cpl"}
+        - {icon: "", launch: "taskmgr", name: "Task Manager"}
+        - {icon: "", launch: "quick_settings",name: "Quick Settings"}
+        - {icon: "", launch: "search", name: "Search"}
+        - {icon: "", launch: "control", name: "Control Panel"}
+        - {icon: "", launch: "ncpa.cpl", name: "Network Settings"}
+        - {icon: "", launch: "notification_center", name: "Notification Center"}
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
       label_offline: "Komorebi OFFLINE"
+      label_workspace_btn: "{index}"
+      label_workspace_active_btn: "{index}"
+      label_workspace_populated_btn: "{index}"
       label_default_name: ""
       label_zero_index: false
-      hide_empty_workspaces: true
-      hide_if_offline: false
+      hide_empty_workspaces: false
+      hide_if_offline: true
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
     options:
@@ -166,7 +169,7 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%a %d,  %b %I:%M %p}"
+      label: "{%A, %b %d %Y   %I:%M %p}"
       label_alt: "{%I:%M %p}"
       tooltip: false
       callbacks:
@@ -198,10 +201,10 @@ widgets:
         ease_pos: 0.8
         ease_min: 0.5
       icons:
-        prev_track: "󰒮"
-        next_track: "󰒭"
-        play: "\uf01d"
-        pause: "\uf28c"
+        prev_track: ""
+        next_track: ""
+        play: ""
+        pause: ""
       media_menu:
         blur: true
         round_corners: true
@@ -212,28 +215,28 @@ widgets:
         offset_top: 16
         offset_left: 1
         thumbnail_corner_radius: 6
-        thumbnail_size: 170
-        max_title_size: 80
-        max_artist_size: 20
-        show_source: false
+        thumbnail_size: 150
+        max_title_size: 45
+        max_artist_size: 40
+        show_source: true
       media_menu_icons:
-        play: ""
-        pause: ""
-        prev_track: "󰙤"
-        next_track: "󰙢"
+        play: ""
+        pause: ""
+        prev_track: ""
+        next_track: ""
   notifications:
     type: "yasb.notifications.NotificationsWidget"
     options:
       class_name: "notify"
-      label: "<span></span> {count}"
-      label_alt: "{count} notifications"
+      label: "<span></span>"
+      label_alt: "<span></span>"
       hide_empty: true
       tooltip: false
       container_padding:
         top: 0
         left: 10
         bottom: 0
-        right: 12
+        right: 4
       callbacks:
         on_left: "toggle_notification"
         on_right: "toggle_label"
