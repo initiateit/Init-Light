@@ -436,7 +436,8 @@
   padding:0 8px;
 }
 .apps-widget .widget-container .label { 
-  font-family: "Material Symbols Rounded"; 
+  font-family: "Material Symbols Rounded";
+  color: var(--text-dark); 
   font-size:18px;
   max-width:32px;
   min-width:26px;
