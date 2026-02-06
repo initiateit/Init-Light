@@ -121,7 +121,7 @@ widgets:
         - {icon: "", launch: "taskmgr", name: "Task Manager"}
         - {icon: "", launch: "quick_settings",name: "Quick Settings"}
         - {icon: "", launch: "search", name: "Search"}
-        - {icon: "", launch: "control", name: "Control Panel"}
+        - {icon: "", launch: "control", name: "Control Panel"}
         - {icon: "", launch: "ncpa.cpl", name: "Network Settings"}
         - {icon: "", launch: "notification_center", name: "Notification Center"}
   komorebi_workspaces:
@@ -152,11 +152,11 @@ widgets:
       tooltip: false
       label: "<span>{icon}</span> {level}"
       volume_icons:
-        - "󰝟"  # Icon for muted
-        - "󰕿"  # Icon for 0-10% volume
-        - "󰖀"  # Icon for 11-30% volume
-        - "󰕾"  # Icon for 31-60% volume
-        - "󰕾"  # Icon for 61-100% volume
+        - ""  # Icon for muted
+        - ""  # Icon for 0-10% volume
+        - ""  # Icon for 11-30% volume
+        - ""  # Icon for 31-60% volume
+        - ""  # Icon for 61-100% volume
       audio_menu:
         blur: true
         round_corners: true

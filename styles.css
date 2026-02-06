@@ -151,6 +151,8 @@
 }
 /*AUDIO WIDGET*/
 .volume-widget {
+  min-width:40px;
+  max-width:60px;
   margin-right: 8px;
   padding-right: 15px;
   padding-left: 12px;
@@ -159,8 +161,7 @@
   border-radius: 12px;
 }
 .volume-widget .icon {
-  min-width:20px;
-  font-family: "Segoe Fluent Icons";
+  font-family: "Material Symbols Rounded";
   color: var(--text-dark);
   font-size: 20px;
   padding: 3px 0 0 0;
@@ -436,8 +437,8 @@
   padding:0 8px;
 }
 .apps-widget .widget-container .label { 
-  font-family: "Material Symbols Rounded";
-  color: var(--text-dark); 
+  color: var(--text-dark);
+  font-family: "Material Symbols Rounded"; 
   font-size:18px;
   max-width:32px;
   min-width:26px;
