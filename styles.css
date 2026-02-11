@@ -402,7 +402,7 @@
 .notification-widget .icon {
   font-family: "Material Symbols Rounded";
   qproperty-text: "";
-  padding: 2px 8px 0 0;
+  padding: 2px 8px 0 8px;
   color: var(--text-dark);
   font-size:21.667px;
   font-weight:350;
